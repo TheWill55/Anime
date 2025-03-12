@@ -1,0 +1,40 @@
+@media (max-width: 880px){
+    .hamburger {
+        display: block;
+        
+    }
+
+    .nav-bar, .search-container {
+        display: none;
+        width: 100%;
+    }
+    .nav-bar.active{
+        display: block;
+        margin: 1rem;
+    }
+    .nav-bar.active ul{
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    .search-container.active {
+        display: flex;
+        margin-top: 1rem;
+    }
+    .destaque-carrossel {
+        height: 250px;
+    }
+
+
+    .anime-card img{
+        padding:5px;
+        height: 100px;
+        width: 180px;
+        
+    }
+    .catalogo{
+        display: flex;
+        justify-content: center;
+          
+    }
+}

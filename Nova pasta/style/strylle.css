@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgb(0, 0, 0);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 15px 15px 15px black ;
+    
+}
+#logo img{
+    max-width:80px;
+}
+
+.hamburger{
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.search-container{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    
+}
+.nav-bar a{
+    color: white;
+    text-decoration: none;
+
+}
+
+#pesquisar{
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    
+}
+input[type="submit"]{
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    background: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+}
+main {
+    background-color: rgb(44, 44, 44);
+    
+}
+
+.destaque-carrossel {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    margin:  0;
+}
+.carrossel-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.carrossel-item.ativo {
+    opacity: 1;
+}
+
+.carrossel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carrossel-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background: rgba(17, 17, 17, 0.452);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+
+
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5rem ;
+    gap: 20px;
+    
+}
+
+.grade-animes {
+    display: flex;
+    flex-direction: column;
+    max-width: 240px;
+    margin-top: 1rem;
+}
+
+.anime-card {
+    padding: 0.5rem;
+    background: rgba(0, 0, 0, 0.493);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+
+
+.anime-card:hover{
+    transform: translateY(-5px);
+}
+
+.anime-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.anime.info {
+    padding: 1rem;
+    color: white;
+}
+
+.anime-info h3 {
+    color: white;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.genero{
+    display: block;
+    color: rgb(218, 186, 128);
+    font-size: 0.9rem;
+}
+
+.avaliacao {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
