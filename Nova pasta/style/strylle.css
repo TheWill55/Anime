@@ -37,13 +37,24 @@ header{
 .nav-bar ul{
     display: flex;
     list-style: none;
+    justify-content: center;
     gap: 1.5rem;
+    padding: 0.2rem;
     
 }
 .nav-bar a{
     color: white;
     text-decoration: none;
+   
+    
 
+}
+.nav-bar a:hover{
+    color: rgb(253, 213, 153);
+    transition: 0.4s;
+    
+
+    
 }
 
 #pesquisar{
@@ -79,8 +90,9 @@ main {
     transition: opacity 0.5s;
 }
 
-.carrossel-item.ativo {
+.carrossel-item.fade {
     opacity: 1;
+
 }
 
 .carrossel-item img {
@@ -97,6 +109,7 @@ main {
     background: rgba(17, 17, 17, 0.452);
     padding: 1rem;
     border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.63);
 }
 
 
@@ -104,34 +117,46 @@ main {
 .catalogo {
     display: flex;
     flex-wrap: wrap;
-    padding: 1.5rem ;
-    gap: 20px;
+    padding: 5px;
+    box-shadow: inset 10px 10px 10px  rgba(0, 0, 0, 0.37);
+    
+    
     
 }
 
 .grade-animes {
     display: flex;
     flex-direction: column;
+    padding: 0.5rem;
+    justify-content: center;
     max-width: 240px;
     margin-top: 1rem;
 }
 
 .anime-card {
     padding: 0.5rem;
+    width: 150px;
+    justify-content: center;
+    height: 200px;
     background: rgba(0, 0, 0, 0.493);
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s;
+    
 }
+
 
 
 
 .anime-card:hover{
     transform: translateY(-5px);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.466);
+    transition: 0.2s;
 }
 
 .anime-card img {
     width: 100%;
+    
     height: 200px;
     object-fit: cover;
 }
