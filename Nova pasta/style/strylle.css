@@ -90,9 +90,8 @@ main {
     transition: opacity 0.5s;
 }
 
-.carrossel-item.fade {
+.carrossel-item.active {
     opacity: 1;
-
 }
 
 .carrossel-item img {
@@ -161,7 +160,7 @@ main {
     object-fit: cover;
 }
 
-.anime.info {
+.anime-info {
     padding: 1rem;
     color: white;
 }

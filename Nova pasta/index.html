@@ -9,9 +9,9 @@
 </head>
 <body>
     <header>
-        <a id="logo" href="#"><img  src="img/logo.png" alt="logo" srcset=""></a>
-        <button class="hamburger" aria-label="Abrir menu">☰</button>
-        <nav class="nav-bar">
+        <a id="logo" href="#"><img  src="img/logo.png" alt="Super Manga - logo" srcset=""></a>
+        <button class="hamburger" aria-label="Abrir menu" aria-controls="primary-navigation" aria-expanded="false">☰</button>
+        <nav class="nav-bar" id="primary-navigation">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Trending</a></li>
@@ -19,20 +19,21 @@
                 <li><a href="#">Salvos</a></li>
             </ul>
         </nav>
-        <div class="search-container">
-            <input type="search" name="pesquisar" id="pesquisar" placeholder="Buscar">
-            <input type="submit" value="Pesquisar">
-        </div>
+        <form class="search-container" role="search">
+            <label for="pesquisar" class="sr-only">Buscar</label>
+            <input type="search" name="pesquisar" id="pesquisar" placeholder="Buscar" />
+            <button type="submit">Pesquisar</button>
+        </form>
         
     </header>
     <main>
         
         <section class="destaque-carrossel">
-            <div class="carrossel-item fade">
-                <img src="img/destaque2.jpeg" alt="solo" srcset="">
+            <div class="carrossel-item active">
+                <img src="img/destaque2.jpeg" alt="Capa de Solo Leveling" loading="lazy" srcset="">
                 <div class="carrossel-info">
-                    <h2>Solo Leving</h2>
-                    <p>Segunda temporada disponivel!</p>
+                    <h2>Solo Leveling</h2>
+                    <p>Segunda temporada disponível!</p>
                 </div>
             </div>
         </section>
@@ -40,9 +41,9 @@
         <section class="catalogo">
             <div class="grade-animes">
                 <div class="anime-card">
-                    <img src="img/destaque2.jpeg" alt="demon-slayer">
+                    <img src="img/destaque2.jpeg" alt="Solo Leveling" loading="lazy">
                     <div class="anime-info">
-                        <h3>Solo Leving</h3>
+                        <h3>Solo Leveling</h3>
                         <span class="genero">Ação, Fantasia</span>
                         <div class="avaliacao">⭐ 4.9/5</div>
                     </div>
@@ -51,9 +52,9 @@
 
             <div class="grade-animes">
                 <div class="anime-card">
-                    <img src="img/opm.jpg" alt="daima">
+                    <img src="img/opm.jpg" alt="One-Punch Man" loading="lazy">
                     <div class="anime-info">
-                        <h3>ONE PUNCH MEN</h3>
+                        <h3>One-Punch Man</h3>
                         <span class="genero">Ação, Aventura</span>
                         <div class="avaliacao">⭐ 4.9/5</div>
                     </div>
@@ -62,7 +63,7 @@
 
             <div class="grade-animes">
                 <div class="anime-card">
-                    <img src="img/destaque1.jpg" alt="aot">
+                    <img src="img/destaque1.jpg" alt="Attack on Titan" loading="lazy">
                     <div class="anime-info">
                         <h3>Attack on Titan</h3>
                         <span class="genero">Ação</span>
@@ -72,9 +73,9 @@
             </div>
             <div class="grade-animes">
                 <div class="anime-card">
-                    <img src="img/destaque3.png" alt="daima">
+                    <img src="img/destaque3.png" alt="Dragon Ball Daima" loading="lazy">
                     <div class="anime-info">
-                        <h3>Dragon ball Daima</h3>
+                        <h3>Dragon Ball Daima</h3>
                         <span class="genero">Ação, Aventura</span>
                         <div class="avaliacao">⭐ 4.9/5</div>
                     </div>
@@ -82,7 +83,7 @@
             </div>
             <div class="grade-animes">
                 <div class="anime-card">
-                    <img src="img/naruto.jpg" alt="daima">
+                    <img src="img/naruto.jpg" alt="Naruto" loading="lazy">
                     <div class="anime-info">
                         <h3>Naruto</h3>
                         <span class="genero">Ação, Aventura</span>
@@ -92,9 +93,9 @@
             </div>
             <div class="grade-animes">
                 <div class="anime-card">
-                    <img src="img/black-clover.jpg" alt="daima">
+                    <img src="img/black-clover.jpg" alt="Black Clover" loading="lazy">
                     <div class="anime-info">
-                        <h3>Black clover</h3>
+                        <h3>Black Clover</h3>
                         <span class="genero">Ação, Aventura</span>
                         <div class="avaliacao">⭐ 4.9/5</div>
                     </div>
@@ -102,7 +103,7 @@
             </div>
             <div class="grade-animes">
                 <div class="anime-card">
-                    <img src="img/demon-slayer.jpeg" alt="demon-slayer">
+                    <img src="img/demon-slayer.jpeg" alt="Demon Slayer" loading="lazy">
                     <div class="anime-info">
                         <h3>Demon Slayer</h3>
                         <span class="genero">Ação, Fantasia</span>
@@ -113,7 +114,7 @@
 
             <div class="grade-animes">
                 <div class="anime-card">
-                    <img src="img/4875617.jpg" alt="daima">
+                    <img src="img/4875617.jpg" alt="Jujutsu Kaisen" loading="lazy">
                     <div class="anime-info">
                         <h3>Jujutsu Kaisen</h3>
                         <span class="genero">Ação, Aventura</span>
